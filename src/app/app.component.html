@@ -1,0 +1,29 @@
+<H1 class="text-center">Generate News Article in single click</H1>
+<hr>
+<div class="">
+  <div class="row">
+    <div class="col-11">
+      <div class="form-group">
+        <label for="Textarea1" class="ms-2">Enter article content/link</label>
+        <textarea class="form-control ms-2 outer content-height" id="articleLink" rows="1" placeholder="content length should be more than 10 char."></textarea>
+      </div>
+    </div>
+    <div class="col-1 text-right justify-content-end">
+      <button class="  btn btn-success float-end me-2 generate-button" (click)="Generate()" id="generateButton">Generate</button>
+    </div>
+  </div>
+</div>
+
+<!-- Article  result -->
+<div *ngFor="let item of articleData;;let i=index ">
+  <div class="row mt-2">
+    <div class="col-1">
+      <div class="form-group pt-4">
+        <label class="ms-2 me-2">Article {{i+1}}</label>
+      </div>
+    </div>
+    <div class="col-10 me-2">
+      <textarea class="form-control ms-2 me-2 outer" id="Textarea1" readonly rows="3">{{item.content}}</textarea>
+    </div>
+  </div>
+

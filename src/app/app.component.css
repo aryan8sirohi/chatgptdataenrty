@@ -1,0 +1,22 @@
+
+.outer {
+    -webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    box-shadow: inset 2px 2px 2px 0px #dddddd;
+    height: 50px;
+    margin: 10px;
+    overflow: auto;
+    padding: 7px 10px;
+    font-family: tahoma;
+    font-size: 13px;
+    border: 1px solid #aaa;
+    height: 300px;
+    
+}
+.content-height{
+    height: 60px;
+}
+
+.generate-button{
+    margin-top: 35%;
+}
